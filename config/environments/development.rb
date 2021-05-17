@@ -1,4 +1,8 @@
+class Application < Rails::Application
+  config.web_console.whitelisted_ips = '2603:7000:7602:6f4f:b4c9:ab6e:6f3b:275e'
+end 
 Rails.application.configure do
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -52,3 +56,4 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
